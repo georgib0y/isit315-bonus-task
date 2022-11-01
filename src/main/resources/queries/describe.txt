@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX GDPROntology: <http://www.semanticweb.org/george/ontologies/2022/9/GDPROntology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX HumanValuesOntology: <http://www.semanticweb.org/george/ontologies/2022/9/HumanValuesOntology#>
+PREFIX GDPROntolog: <http://www.semanticweb.org/george/ontologies/2022/9/GDPROntolog#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ValuesMapOntology: <http://www.semanticweb.org/george/ontologies/2022/9/ValuesMapOntology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+DESCRIBE ?x WHERE {
+    ?x HumanValuesOntology:definition "Safety and stability in the wider society"@en .
+}

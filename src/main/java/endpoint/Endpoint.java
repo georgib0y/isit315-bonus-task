@@ -23,11 +23,13 @@ public class Endpoint {
 	        Dataset ds = DatasetFactory.create(valueMapOnt);
 
 	        // create the endpoint with defaults and add the ontology
-	        FusekiServer.create().add(DB_NAME, ds).start();
+	        FusekiServer server = FusekiServer.create().add(DB_NAME, ds).start();
+	        
+	        System.out.println("\n###############################################################################");
+	        System.out.println("\nFuseki Server Started on http://localhost:"+server.getHttpPort()+DB_NAME);
+	        System.out.println("\n###############################################################################");
         } catch (Exception e) {
         	System.out.println("Could not start endpoint. " + e);
         }
-
-
     }
 }
